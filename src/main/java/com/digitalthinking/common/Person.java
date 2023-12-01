@@ -21,6 +21,7 @@ public class Person {
     private String documentNumber;
     private String phone;
     private String address;
+    private String email;
 
     public long getId() {
         return id;
@@ -36,6 +37,14 @@ public class Person {
 
     public void setNames(String names) {
         this.names = names;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getSurname() {
