@@ -21,4 +21,4 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package  deploy:deploy-file'      
     mavenAuthenticateFeed: true
-    options: '-X -P azure_artifacts -Dpackaging="jar" -DrepositoryId="maven_libraries" -Durl="https://pkgs.dev.azure.com/greg8408/Devops_Pro/_packaging/maven_libraries/maven/v1" -DgroupId="com.digitalthinking" -DartifactId="common-library" -Dversion="0.0.1-SNAPSHOT" -Dfile="$(System.DefaultWorkingDirectory)/target/common-library-0.0.1-SNAPSHOT.jar"'
+    options: '-X -P azure_artifacts -Dpackaging="jar" -DrepositoryId="maven_library" -Durl="https://pkgs.dev.azure.com/greg8408/Devops_Pro/_packaging/maven_library/maven/v1" -DgroupId="com.digitalthinking" -DartifactId="common-library" -Dversion="0.0.1-SNAPSHOT" -Dfile="$(System.DefaultWorkingDirectory)/target/common-library-0.0.1-SNAPSHOT.jar"'
