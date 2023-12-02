@@ -33,6 +33,22 @@
             <organizationUrl>https://digitalthinking.biz/es/ada-enterprise-core#contactus</organizationUrl>
         </developer>
     </developers>
+        <profiles>
+        <profile>
+            <id>azure_artifacts</id>
+            <repositories>
+                <repository>
+  <id>maven_libraries</id>
+  <url>https://pkgs.dev.azure.com/greg8408/Devops_Pro/_packaging/maven_libraries/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+                </repository>
+            </repositories> 
+
     <build>
         <plugins>
             <plugin>
@@ -63,4 +79,6 @@
             </plugin>
         </plugins>
     </build>
+        <profile>
+        <profiles>
 </project>
